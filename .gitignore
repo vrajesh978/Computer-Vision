@@ -1,5 +1,9 @@
 # Don't track content of these folders
 CannyEdgeDetection/__pycache__
-
+CannyEdgeDetection/Images
 #Don't track following files
 *.pyc
+*.jpg
+*.bmp
+*.png
+*.jpeg
