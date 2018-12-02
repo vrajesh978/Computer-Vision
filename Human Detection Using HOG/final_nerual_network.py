@@ -68,7 +68,7 @@ def build_nn(X,Y,n_classes,no_hidden_neurons,num_passes = 1000, print_loss=False
             That's why, We return our model parameter even if all the epoch haven't finished.
         '''
         if i > 0:
-            if abs(cost-new_cost) <= 0.000000000000001:
+            if abs(cost-new_cost) <= 0.0000000001:
                 return model
 
         cost = new_cost
