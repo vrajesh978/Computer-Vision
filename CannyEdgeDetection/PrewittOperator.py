@@ -8,7 +8,6 @@ PREWIT_OPERATOR_GY = np.array([[1,1,1],
 								[0,0,0],
 								[-1,-1,-1]])
 
-
 def convolution(img,g,height,width):
 	"""
 		parameters:

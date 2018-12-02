@@ -5,7 +5,6 @@ import HelperModule
 import GaussianFilter
 import PrewittOperator
 
-
 STATIC_PATH = "Images/" #static path for storting images
 
 def CannyEdgeDetector(image_path,src,edges):
@@ -20,7 +19,6 @@ def CannyEdgeDetector(image_path,src,edges):
 		os.makedirs(STATIC_PATH)
 	if not os.path.exists(STATIC_PATH+image_path):
 		os.makedirs(STATIC_PATH+image_path)
-
 	filtered_img,height,width = GaussianFilter.gaussian_filtering(src) #compute gaussian filter
 	cv2.imwrite(STATIC_PATH+image_path+"/gaussian_blur.bmp",filtered_img) #save gaussian image.
 	
